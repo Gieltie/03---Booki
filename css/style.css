@@ -283,6 +283,7 @@ input, button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+    width: fit-content;
 }
 
 /* -------- card hebergements ------- */
@@ -324,6 +325,10 @@ a .card-content {
     /* width: 369px; *****************************************************/
 }
 
+.populaires-cards {
+    width: fit-content;
+}
+
 .populaires-cards img {
     width: 33%;
     height: 144px;
@@ -359,17 +364,16 @@ a .card-content {
 
 /*************** Activites ***************/
 .activites {
-   padding: 0 30px;
-}
-
-.activites h2 {
-    padding: 30px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding: 30px;
 }
 
 .activites-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
+    width: fit-content;
     gap: 30px;
 }
 

@@ -234,7 +234,7 @@ input, button {
 
 /* -------- info -------- */
 .info-box {
-    display: -webkit-box;
+    display: flex;
     align-items: center;
     gap: 10px;
 }
@@ -242,6 +242,7 @@ input, button {
 .info-icon {
     height: 22px;
     width: 22px;
+    min-width: 22px;
     border: 1px solid var(--border-color);
     border-radius: 50%;
 
@@ -283,7 +284,7 @@ input, button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 /* -------- card hebergements ------- */
@@ -325,9 +326,9 @@ a .card-content {
     /* width: 369px; *****************************************************/
 }
 
-.populaires-cards {
+/* .populaires-cards {
     width: fit-content;
-}
+} */
 
 .populaires-cards img {
     width: 33%;
@@ -373,8 +374,8 @@ a .card-content {
 .activites-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: fit-content;
     gap: 30px;
+    /* width: fit-content; */
 }
 
 .activites-card img {

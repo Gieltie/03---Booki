@@ -1,3 +1,7 @@
+/* * {
+    box-shadow: 0 0 0 1px red inset;
+} */
+
 /*************** General ***************/
 :root {
     --main-color: #0065FC;
@@ -7,6 +11,7 @@
     --black-color: #000000;
     --white-color: #FFFFFF;
 }
+
 
 .fa-solid {
     color: var(--main-color);
@@ -30,7 +35,7 @@ main {
     gap: 35px;
 }
 
-h1, h2 , h3, p, a, li {
+h2, h3, p, a, li {
     margin: 0;
 }
 
@@ -38,7 +43,8 @@ h1, h2 {
     font-size: 1.375em;
 }
 
-h3 {
+.filter-title, .hebergements-subtitle, .list-title {
+    font-weight: 700;
     font-size: 1.125em;
 }
 
@@ -105,14 +111,18 @@ nav ul {
     margin: 0;
 }
 
-nav a {
+nav li {
     padding-top: 15px;
     border-top: solid 2px var(--white-color);
 }
 
-nav a:hover {
+nav li:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
+}
+
+nav a:hover {
+    color: var(--main-color);
 }
 
 /*************** Search-bar ***************/
@@ -201,10 +211,6 @@ input, button {
     gap: 15px;
 }
 
-.filter-box h3 {
-    font-size: 18px;
-}
-
 .filter {
     display: flex;
     justify-content: space-between;
@@ -220,7 +226,7 @@ input, button {
     border-radius: 25px;
     font-weight: 700;
     padding: 0 19px;
-    font-size: 1.06em;
+    font-size: 1em;
 }
 
 .filter a:hover {
@@ -402,7 +408,7 @@ footer {
 }
 
 .footer-box li {
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /****** Media queries ***********/
@@ -493,20 +499,18 @@ footer {
     nav ul {
         margin: 0;
     }
-
-    nav a:hover {
+    
+    nav li {
         border-top: none;
-    }
-
-    nav a {
         flex: 50%;
         padding: 0 0 17px 0;
         text-align: center;
         border-bottom: solid 2px var(--main-bg-color);
     }
-
-    nav a:hover {
-        border-bottom: 2px solid var(--main-color);
+    
+    nav li:hover {
+        border-top: none;
+        border-bottom: solid 2px var(--main-color);
     }
 
     .search-bar-box {
@@ -610,17 +614,3 @@ footer {
     }
 
 }
-
-
-/* --------------------------------------- */
-/* Responsive columns */
-/* 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  } */
-  
-  /* ---------------------------------------- */

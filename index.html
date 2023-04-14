@@ -17,8 +17,8 @@
         <img src="images/logo/Booki.png" alt="logo of booki">
         <nav>
             <ul>
-                <a href="#hebergement"><li>Hébergements</li></a>
-                <a href="#activites"><li>Activités</li></a>
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +28,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </article>
-            <form method="get" action="">
+            <form method="get" action="sendToMe">
                 <i class="logo-box fa-solid fa-location-dot"></i>
                 <input class="search-input" type="text" name="search" id="search" placeholder="Marseille, France">
                 <input type="submit" value="Rechercher" class="search-button search-button-text">
@@ -37,7 +37,7 @@
                 </div>
             </form>
             <article class="filter-box">
-                <h3>Filtres</h3>
+                <span class="filter-title">Filtres</span>
                 <div class="filter">
                     <a href=""><i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique</a>
                     <a href=""><i class="fa-solid fa-person fa-lg"></i>Familial</a>
@@ -150,7 +150,7 @@
                     </a>            
                 </div>
                 <div class="hebergements-footer">
-                    <h3>Afficher plus</h3>
+                    <span class="hebergements-subtitle">Afficher plus</span>
                 </div>
             </section>
             <section class="populaires">
@@ -248,18 +248,18 @@
         </section>  
         <footer>
             <ul class="footer-box">
-                <h3>À propos</h3>
+                <li class="list-title">À propos</li>
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales </li>
                 <li>Données et confidentialité</li>
             </ul>
             <ul class="footer-box">
-                <h3>Nos hébergements</h3>
+                <li class="list-title">Nos hébergements</li>
                 <li>Charte qualité</li>
                 <li>Proposer votre hôtel</li>
             </ul>
             <ul class="footer-box">
-                <h3>Assistance</h3>
+                <li class="list-title">Assistance</li>
                 <li>Centre d’aide</li>
                 <li>Nous contacter</li>
             </ul>
@@ -267,5 +267,3 @@
     </main>
 </body>
 </html>
-<!-- <i class="fa-solid fa-location-dot"></i>
-<i class="fa-solid fa-star"></i> -->

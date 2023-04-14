@@ -1,12 +1,11 @@
 /*************** General ***************/
-* {
-    box-shadow: 0 0 0 1px red inset;
-}
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --border-color: #D9D9D9;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
 }
 
 .fa-solid {
@@ -44,7 +43,7 @@ h3 {
 }
 
 a {
-    color: #000;
+    color: var(--black-color);
     text-decoration: none;
 }
 
@@ -56,12 +55,11 @@ ul {
     padding: 0;
 }
 
-
 /* -------- general cartes ------- */
 .card {
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 20px;
-    box-shadow: 0 3px 15px 0 #000;
+    box-shadow: 0 3px 15px 0 var(--black-color);
 }
 
 .card img {
@@ -85,7 +83,6 @@ ul {
 }
 
 /*************** Header ***************/
-/* -------- general ------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -99,7 +96,6 @@ header img {
 
 /* -------- navigation ------- */
 nav {
-    height: 35px;
     width: 328.6px;
 }
 
@@ -110,8 +106,8 @@ nav ul {
 }
 
 nav a {
-    height: auto;
-    padding-top: 14px;
+    padding-top: 15px;
+    border-top: solid 2px var(--white-color);
 }
 
 nav a:hover {
@@ -120,7 +116,6 @@ nav a:hover {
 }
 
 /*************** Search-bar ***************/
-/* -------- general ------- */
 .search-bar-box {
     display: flex;
     flex-direction: column;
@@ -160,7 +155,7 @@ input, button {
 .logo-box {
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-    color: #000;
+    color: var(--black-color);
     padding: 15px 18px 15px 16px;
 }
 
@@ -170,12 +165,12 @@ input, button {
 }
 
 .search-input::placeholder {
-    color: #000;
+    color: var(--black-color);
 }
 
 .search-button {
     background-color: var(--main-color);
-    color: #FFF;
+    color: var(--white-color);
 }
 
 .search-button-text {
@@ -189,13 +184,13 @@ input, button {
     width: 17px;
     height: 17px;
     padding: 16px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
 }
 
 .search-button-logo:after {
     font-family: 'FontAwesome';
     content: '\f002';
-    color: #FFF;
+    color: var(--white-color);
 }
 
 /* -------- filter -------- */
@@ -221,7 +216,7 @@ input, button {
     align-items: center;
     width: fit-content;
     height: 50px;
-    border: 2px solid #D9D9D9;
+    border: 2px solid var(--border-color);
     border-radius: 25px;
     font-weight: 700;
     padding: 0 19px;
@@ -239,21 +234,24 @@ input, button {
 
 /* -------- info -------- */
 .info-box {
-    display: flex;
+    display: -webkit-box;
     align-items: center;
     gap: 10px;
 }
 
 .info-icon {
-    height: 24px;
-    min-width: 24px;
-    border: 1px solid #D9D9D9;
+    height: 22px;
+    width: 22px;
+    border: 1px solid var(--border-color);
     border-radius: 50%;
+
 }
 
-.info-icon i {
-    padding-left: 10px;
+.info-icon i{
+    padding: 1px 0 0 9px ;
 }
+
+
 
 /*************** Hebergements-populaires ***************/
 /* -------- general ------- */
@@ -292,7 +290,7 @@ input, button {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;
-    border: solid 5px #FFF;
+    border: solid 5px var(--white-color);
     box-sizing: border-box;
 }
 
@@ -308,6 +306,7 @@ a .card-content {
 .populaires {
     background-color: var(--main-bg-color);
     width: 32%;
+    /* overflow: hidden; ************************************************/
 }
 
 .section-title {
@@ -320,8 +319,9 @@ a .card-content {
 .populaires-cards .card {
     display: flex;
     margin-top: 30px;
-    border: solid 5px #FFF;
+    border: solid 5px var(--white-color);
     border-right: 0;
+    /* width: 369px; *****************************************************/
 }
 
 .populaires-cards img {
@@ -482,7 +482,6 @@ footer {
     }
 
     nav {
-        margin-top: 15px;
         width: 100%;
     }
 
@@ -490,17 +489,19 @@ footer {
         margin: 0;
     }
 
-    nav li {
+    nav a:hover {
+        border-top: none;
+    }
+
+    nav a {
         flex: 50%;
         padding: 0 0 17px 0;
         text-align: center;
-        border-bottom: solid 2px var(--light-gray);
+        border-bottom: solid 2px var(--main-bg-color);
     }
 
-    nav li:hover {
+    nav a:hover {
         border-bottom: 2px solid var(--main-color);
-        color: var(--main-color);
-        border-top: none;
     }
 
     .search-bar-box {

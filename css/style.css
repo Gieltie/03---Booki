@@ -1,4 +1,8 @@
 /*************** General ***************/
+* {
+    box-shadow: 0 0 0 1px red inset;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -105,11 +109,12 @@ nav ul {
     margin: 0;
 }
 
-nav li {
+nav a {
+    height: auto;
     padding-top: 14px;
 }
 
-nav li:hover {
+nav a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
@@ -178,17 +183,20 @@ input, button {
     padding: 14px 16px;
 }
 
-.search-button-logo {
-    border-radius: 15px;
+.search-button-logo{
     display: none;
-}
-
-.fa-search {
+    border-radius: 15px;
     width: 17px;
     height: 17px;
     padding: 16px;
+    background-color: #0065FC;
 }
 
+.search-button-logo:after {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    color: #FFF;
+}
 
 /* -------- filter -------- */
 .filter-box {
@@ -394,7 +402,7 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header img {
         margin-left: 50px;
     }
@@ -460,7 +468,7 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     main {
         padding: 0;
     }

@@ -11,7 +11,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
 </head>
 <body>
     <header id="header">
@@ -23,12 +22,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-wrapper">
         <section class="search-bar-box">
-            <article class="search-bar-title">
+            <div class="search-bar-title">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-            </article>
+            </div>
             <form method="get" action="sendToMe">
                 <i class="logo-box fa-solid fa-location-dot"></i>
                 <input class="search-input" type="text" name="search" id="search" placeholder="Marseille, France">
@@ -38,7 +37,7 @@
                 </div>
             </form>
             <article class="filter-box">
-                <span class="filter-title">Filtres</span>
+                <h2 class="filter-title">Filtres</h2>
                 <div class="filter">
                     <a href=""><i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique</a>
                     <a href=""><i class="fa-solid fa-person fa-lg"></i>Familial</a>
@@ -46,16 +45,16 @@
                     <a href=""><i class="fa-solid fa-fire fa-lg"></i>Nos pépites</a>
                 </div>
             </article>
-            <article class="info-box">
+            <div class="info-box">
                 <div class="info-icon">
                     <i class="fa-2xs fa-solid fa-info"></i>
                 </div>
                 <div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-            </article>
+            </div>
         </section>
-        <section class="hebergements-populaires" id="hebergement">
+        <div class="hebergements-populaires" id="hebergement">
             <section class="hebergements">
                 <h2>Hébergements à Marseille</h2>
                 <div class="hebergements-card">
@@ -217,32 +216,32 @@
                     </a>
                 </div>
             </section>
-        </section>
+        </div>
         <section class="activites" id="activites">
             <h2>Activités à Marseille</h2>
             <div class="activites-card">
                 <a href="#header" class="card">
                     <img src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                    <div class="card-content">
-                        <h3 class="card-title">Vieux-Port</h3>
+                    <div class="card-title activites-card-title small">
+                        <h3>Vieux-Port</h3>
                     </div>
                 </a>
                 <a href="#header" class="card">
                     <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                    <div class="card-content">
-                        <h3 class="card-title">Fort de Pomègues</h3>
+                    <div class="card-title activites-card-title small">
+                        <h3>Fort de Pomègues</h3>
                     </div>
                 </a>
                 <a href="#header" class="card">
                     <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                    <div class="card-content">
-                        <h3 class="card-title">Parc national des Calanques</h3>
+                    <div class="card-title activites-card-title">
+                        <h3>Parc national des Calanques</h3>
                     </div>
                 </a>
                 <a href="#header" class="card">
                     <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                    <div class="card-content">
-                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                    <div class="card-title activites-card-title">
+                        <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
             </div>
